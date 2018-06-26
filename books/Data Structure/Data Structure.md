@@ -46,19 +46,19 @@
 
 ##### 集合结构
 集合结构：集合结构中的数据元素除了同属于一个集合外，它们之间没有其他的关系。  
-![集合结构](list.jpg)
+![集合结构](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/list.jpg)
 
 ##### 线性结构
 线性结构：线性结构中的数据元素之间是一对一的关系。  
-![线性结构](liner.jpg)
+![线性结构](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/liner.jpg)
 
 ##### 树形结构
 树形结构：树形结构中的数据元素之间存在一对多的层次关系。  
-![树形结构](tree.jpg)
+![树形结构](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/tree.jpg)
 
 ##### 图形结构
 图形结构：图形结构的数据元素是多对多的关系。
-![图形结构](picture.jpg)
+![图形结构](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/picture.jpg)
 
 #### 物理结构
 物理结构：是指数据的逻辑结构在计算机中的存储形式。
@@ -68,10 +68,10 @@
 数据元素的存储方式有两种：顺序存储和链式存储。
 
 顺序存储结构：是把数据元素存放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。  
-![顺序存储结构](/images/data/phy.jpg)
+![顺序存储结构](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/phy.jpg)
 
 链式存储结构：是把数据元素存放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。  
-![链式存储结构](/images/data/last.jpg)
+![链式存储结构](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/last.jpg)
 
 ### 抽象数据类型
 数据类型：是指一组性质相同的值得集合及定义在此集合上的一些操作的总称。
@@ -148,12 +148,12 @@
     
     例：两个 n*n矩阵相乘
     对应的语句频度                  算法语句            
-      n          for(i=0;i<n;i++)
-      n^2           for(j=0;j<n;j++)
-                        {
-      n^2                  c[i][j] = 0;
-      n^3                  for(k=0;k<n;k++)
-      n^3                       c[i][j] = c[i][j]+ a[i][k]*b[k][j];
+      n                           for(i=0;i<n;i++)
+      n^2                            for(j=0;j<n;j++)
+                                        {
+      n^2                                   c[i][j] = 0;
+      n^3                                   for(k=0;k<n;k++)
+      n^3                                       c[i][j] = c[i][j]+ a[i][k]*b[k][j];
 
                         }
 总执行次数 f(n) = 2n^3 + 2n^2 + n
