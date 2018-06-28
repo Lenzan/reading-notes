@@ -103,7 +103,7 @@
 利用了栈栈底位置不变 ， 而栈顶位置动态变化的特性为两个栈申请一个共享的一维数组空间S[M]  
 将两个栈的栈底分别为一维数组的两端 0 和 M-1  
 共享栈空间示意： top[0] 和 top[1] 为两个栈顶指示器  
-![stack](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/stack.jpg)
+![stack](https://github.com/Lenzan/reading-notes/blob/master/books/Data%20Structure/Texture/stack2.jpg)
 ##### 两栈共享的数据结构定义
 
         #define M 100
