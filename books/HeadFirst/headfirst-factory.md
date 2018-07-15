@@ -38,7 +38,7 @@
 ![factory6](https://github.com/Lenzan/reading-notes/blob/master/books/HeadFirst/Texture/factory6.png)
 
 ### 依赖倒置原则
-<color=red>设计原则：要依赖抽象，不要依赖具体类</color>  
+设计原则：要依赖抽象，不要依赖具体类   
 意思就是：不能让高层组件依赖底层组件，而且，不管高层或底层组件，”两者“都应该依赖于抽象。
 
 所以在应用工厂方法之后，类图看起来就像这样：  
