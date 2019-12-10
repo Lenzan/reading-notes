@@ -1,4 +1,4 @@
-# 工厂模式
+# 工厂模式测试
 ## 定义简单工厂
 简单工厂其实不是一种设计模式，比较像一种编程习惯。但由于经常被使用，所以给它一个" Head First Patter 荣誉奖"。有些开发人员的确是把这个编程习惯误认为是“工厂模式” ,下次跟开发的朋友聊天无话可说的时候，这个应该是打破沉默的一个不错的选择。  
 
@@ -81,7 +81,7 @@
             public Dough createSauce(){
                 return new MarinaraSauce();
             }
-
+    
              public Clam createClam(){
                 return new FreshClams();
             }
@@ -94,30 +94,30 @@
             string name;
             Dough dough;
             Sauce sauce;
-
+    
             abstract void prepare();
-
+    
             void Bake(){
                 print("bake...");
             }
-
+    
             void cut(){
                 print("cut");
             }
-
+    
             void Box()
             {
                 print("box");
             }
-
+    
             void SetName(string name){
                 this.name = name;
             }
-
+    
             string GetName(){
                 return name;
             }
-
+    
         }
 
 - CheesePizza 类
@@ -127,7 +127,7 @@
             public CheesePizza(PizzaIngredientFactory ingredientFactory){
                 this.ingredientFactory = ingredientFactory;
             }
-
+    
             void prepare(){
                 print("prepare" + name)
                 dough = ingredientFactory.CreateDough();
@@ -142,7 +142,7 @@
             public CheesePizza(PizzaIngredientFactory ingredientFactory){
                 this.ingredientFactory = ingredientFactory;
             }
-
+    
             void prepare(){
                 print("prepare" + name)
                 dough = ingredientFactory.CreateDough();
@@ -158,7 +158,7 @@
             protected Pizza CreatePizza(string name){
                 Pizza pizza = null;
                 PizzaIngredientFactory ingredientFactory = new PizzaIngredientFactory();
-
+    
                 if(name.Equals("cheese")){
                     pizza = new CheesePizza(ingredientFactory);
                     pizza.SetName("New York Style Cheese Pizza");
